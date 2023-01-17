@@ -39,6 +39,10 @@ p {
   align-items: center;
 }
 
+.menu {
+  z-index: 1;
+}
+
 .menu-list {
   list-style: none;
   display: flex;
@@ -61,6 +65,7 @@ p {
 .burger-menu-mobile {
   list-style: none;
   display: none;
+  z-index: 2;
 }
 
 .burger-menu-link {
