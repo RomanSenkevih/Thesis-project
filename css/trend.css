@@ -32,6 +32,9 @@
 
 .trend-block {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #606260;
   z-index: 1;
 }
@@ -71,31 +74,22 @@
 
 .trend-tag-link {
   text-decoration: none;
-  font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: rgb(181, 159, 91);
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
 }
 
 .trend-tag-link:hover {
   border-bottom: 2px solid #b59f5b;
 }
 
-.trend-title {
-  margin-bottom: 28px;
-}
-
 .trend-title-link {
-  display: inline-block;
   text-decoration: none;
-  font-size: 19px;
   font-family: "Open Sans", sans-serif;
   color: rgb(252, 250, 251);
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
 }
 
 .trend-title-link:hover {
@@ -112,10 +106,9 @@
   }
 
   .trend-text {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 20px;
-      padding: 35px 5px 0 35px;
+      width: 90%;
+      margin-bottom: 5.4%;
+      padding: 9.4% 8% 8% 8%;
       border: 3px solid rgb(181, 159, 91);
   }
 
@@ -126,8 +119,16 @@
   .trend-block:nth-child(1n+2) {
       margin: 0 2px;
   }
-}
 
+  .trend-tag-link {
+      font-size: 0.8vw;
+  }
+
+  .trend-title-link {
+      font-size: 1.2vw;
+  }
+}
+/* **************************************************************************************************** */
 @media (orientation: portrait) and (min-width: 641px) and (max-width: 1200px) {
   .trend-main-title {
       margin: 43px 0 30px;
@@ -138,15 +139,18 @@
   }
 
   .trend-text {
-      margin: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 30px 30px 0 30px;
-      border: 3px solid rgb(181, 159, 91);
+    width: 90%;
+    margin-bottom: 4%;
+    padding: 9.88% 8.1% 8.1% 8.1%;
+    border: 3px solid rgb(181, 159, 91);
+}
+
+  .trend-tag-link {
+    font-size: 1.8vw;
   }
 
   .trend-title-link {
-      font-size: 17px;
+      font-size: 2.2vw;
   }
 
   .trend-block {
@@ -157,7 +161,7 @@
       margin: 2px 2px;
   }
 }
-
+/* ******************************************************************************************************************* */
 @media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px) {
   .trend-main-title {
       margin: 43px 0 30px;
@@ -168,18 +172,21 @@
   }
 
   .trend-text {
-      padding: 10px;
-      margin: 10px;
-      border: 2px solid rgb(181, 159, 91);
-  }
+    width: 90%;
+    max-height: 85.8%;
+    margin-bottom: 5.4%;
+    padding: 9.4% 8% 8% 8%;
+    overflow: auto;
+    border: 2px solid rgb(181, 159, 91);
+}
 
   .trend-tag-link {
-      font-size: 10px;
-  }
+  font-size: 1.16vw;
+}
 
-  .trend-title-link {
-      font-size: 14px;
-  }
+ .trend-title-link {
+    font-size: 1.4vw;
+}
 
   .trend-block {
       width: calc(25% - 4px);
@@ -189,7 +196,7 @@
       margin: 0 2px;
   }
 }
-
+/* ****************************************************************************************** */
 @media (orientation: landscape) and (max-width: 641px) {
   .trend-main-title {
       margin: 40px 0 35px 0;
@@ -204,14 +211,21 @@
   }
 
   .trend-text {
-      margin: 15px;
-      padding: 20px;
-      border: 2px solid rgb(181, 159, 91);
-  }
+    width: 90%;
+    max-height: 85.8%;
+    margin-bottom: 5.4%;
+    padding: 9.4% 8% 8% 8%;
+    overflow: auto;
+    border: 2px solid rgb(181, 159, 91);
+}
 
-  .trend-title-link {
-      font-size: 14px;
-  }
+  .trend-tag-link {
+  font-size: 2.18vw;
+}
+
+ .trend-title-link {
+    font-size: 2.5vw;
+}
 
   .trend-block {
       width: calc(50% - 4px);
@@ -221,8 +235,12 @@
       margin: 2px 2px;
   }
 }
-
+/* ******************************************************************************************** */
 @media (orientation: portrait) and (max-width: 640px) {
+  .trend-blocks {
+      min-width: 250px;
+  }
+
   .trend-main-title {
       margin: 40px 0 35px 0;
   }
@@ -237,16 +255,24 @@
   }
 
   .trend-text {
-      margin: 15px;
-      padding: 30px;
-      border: 3px solid rgb(181, 159, 91);
-  }
+    width: 91.6%;
+    max-height: 85.8%;
+    margin-bottom: 5.4%;
+    padding: 9.4% 8% 8% 8%;
+    overflow: auto;
+    border: 2px solid rgb(181, 159, 91);
+}
 
-  .trend-title-link {
-      font-size: 17px;
-  }
+  .trend-tag-link {
+  font-size: 3.8vw;
+}
+
+ .trend-title-link {
+    font-size: 4.4vw;
+}
 
   .trend-block {
+      min-width: 250px;
       width: 100%;
       margin: 0 0 4px 0;
   }

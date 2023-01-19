@@ -103,23 +103,6 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 640px) {
-  .popup {
-      max-width: 330px;
-      width: 100%;
-      padding: 30px 22px;
-  }
-
-  .popup_title_link {
-      font-size: 16px;
-  }
-
-  .popup_redio_yes {
-      margin-right: 40px;
-      margin-left: 5px;
-  }
-}
-
 #popup_redio_yes,
 #popup_redio_no {
   display: inline-block;
@@ -168,7 +151,6 @@
   height: 1px;
 }
 
-/* ****************************************************** */
 .popup_textarea_text {
   margin-bottom: 5px;
 }
@@ -217,4 +199,21 @@
   background: none;
   width: 20px;
 
+}
+
+@media (max-width: 640px) {
+  .popup {
+      max-width: 330px;
+      width: 100%;
+      padding: 30px 22px;
+  }
+
+  .popup_title_link {
+      font-size: 16px;
+  }
+
+  .popup_redio_yes {
+      margin-right: 40px;
+      margin-left: 5px;
+  }
 }

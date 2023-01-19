@@ -4,9 +4,22 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: bold;
+}
+
 p {
   padding-bottom: 10px;
 }
+
 
 .header {
   position: relative;
@@ -140,6 +153,7 @@ p {
 
 @media (max-width: 640px) {
   .header {
+      min-width: 250px;
       width: 100%;
       height: 100%;
       padding: 0 30px;
