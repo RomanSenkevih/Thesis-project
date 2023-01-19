@@ -1,6 +1,9 @@
 
 .sidebar {
     position: relative;
+    width: 270px;
+    margin-top: 5px;
+    margin-left: 15px;
   }
 
   .section-new {
@@ -290,14 +293,6 @@
     content: "8";
     cursor: default;
   }
-
-  @media (min-width: 1201px) {
-    .sidebar {
-        width: 270px;
-        margin-top: 5px;
-        margin-left: 15px;
-    }
-  }
   
   @media (min-width: 641px) and (max-width: 1200px) {
     .sidebar {
@@ -319,7 +314,6 @@
   
   @media (max-width: 640px) {
     .sidebar {
-        /* min-width: 250px; */
         width: 100%;
         margin-left: 0;
     }
