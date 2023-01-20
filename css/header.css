@@ -24,7 +24,7 @@ p {
 .header {
   position: relative;
   width: 100%;
-  min-height: 448px;
+  min-height: 450px;
   background-image: url(../images/banner-bg.jpg);
   background-position: top 0 center;
   background-repeat: no-repeat;
@@ -57,7 +57,6 @@ p {
 
 .header-logo {
   width: 180px;
-  height: 40.8px;
 }
 
 .menu-list {
@@ -81,7 +80,6 @@ p {
 .header-title {
   width: 687px;
   margin: 130px auto 0;
-  padding-bottom: 127px;
   font-size: 45px;
   line-height: 1.650;
 }
@@ -105,7 +103,7 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -146,9 +144,9 @@ p {
 
 @media (max-width: 640px) {
   .header {
-      min-width: 250px;
+      min-width: 300px;
       width: 100%;
-      min-height: 638px;
+      min-height: 642px;
       padding: 0 30px;
       background-image: url(../images/banner-mobile.jpg);
       background-position: center center;
@@ -175,16 +173,15 @@ p {
   }
 
   .header-logo {
-      margin-top: 160px;
-      width: 100%;
+      width: 270px;
+      margin-top: 166px;
   }
 
   .header-title {
       width: 100%;
-      margin-top: 95px;
+      margin-top: 92px;
       font-size: 26px;
+      line-height: 1.385;
   }
-
-
 
 }

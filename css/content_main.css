@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
-  padding:  15px;
+  padding: 0  15px;
   margin: 55px auto 0;
 }
 
@@ -112,12 +112,12 @@
       flex-wrap: nowrap;
       width: 100%;
       margin-top: 42px;
-      padding: 0 33px;
+      padding: 0 34px;
   }
 
   .main {
-      width:calc(59% - 19px);
-      margin-right: 19px;
+    width: 100%;
+       margin-right: 25px; 
       margin-top: 8px;
       top: 0;
   }
@@ -159,9 +159,10 @@
 
 @media (max-width: 640px) {
   .content {
-      min-width: 250px;
-      padding: 0 15px;
+      min-width: 300px;
       width: 100%;
+      padding: 0 15px;
+      margin-top: 32px;
   }
 
   .main {
@@ -175,25 +176,36 @@
       width: 100%;
       border-bottom: 3px solid #c4bfbf;
       margin-top: 0;
-      margin-bottom: 30px;
+      margin-bottom: 34px;
   }
 
   .post-image {
       width: 100%;
       height: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 13px;
   }
 
   .post {
       width: 100%;
   }
+  
+  
 
   .post-title-link {
       font-size: 16px;
   }
 
+  .post-tag-ul {
+    margin-bottom: 7px;
+  }
+
   .data-author {
-      margin-bottom: 10px;
+    margin-top: -10px;
+      margin-bottom: 13px;
   }
  
+  .post-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
