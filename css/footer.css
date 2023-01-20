@@ -60,13 +60,13 @@
 
 @media (max-width: 640px) {
   .footer {
-    margin-top: -20px;
+      margin-top: -20px;
       min-width: 300px;
       width: 100%;
   }
 
   .social-network-links {
-    margin-bottom: 43px;
-    
+      margin-bottom: 43px;
+
   }
 }

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
-  padding: 0  15px;
+  padding: 0 15px;
   margin: 55px auto 0;
 }
 
@@ -27,8 +27,8 @@
 
 .post-image {
   background-color: #606260;
-    width: 380px;
-    height: 295px;
+  width: 380px;
+  height: 295px;
 }
 
 .post-tag-ul {
@@ -108,7 +108,7 @@
 
 @media (min-width: 641px) and (max-width: 1200px) {
   .content {
-    justify-content: space-between;
+      justify-content: space-between;
       flex-wrap: nowrap;
       width: 100%;
       margin-top: 42px;
@@ -116,8 +116,8 @@
   }
 
   .main {
-    width: 100%;
-       margin-right: 25px; 
+      width: 100%;
+      margin-right: 25px;
       margin-top: 8px;
       top: 0;
   }
@@ -154,7 +154,7 @@
   .data-author {
       margin-bottom: 28px;
   }
- 
+
 }
 
 @media (max-width: 640px) {
@@ -188,24 +188,24 @@
   .post {
       width: 100%;
   }
-  
-  
+
+
 
   .post-title-link {
       font-size: 16px;
   }
 
   .post-tag-ul {
-    margin-bottom: 7px;
+      margin-bottom: 7px;
   }
 
   .data-author {
-    margin-top: -10px;
+      margin-top: -10px;
       margin-bottom: 13px;
   }
- 
+
   .post-text {
-    font-size: 14px;
-    margin-bottom: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
   }
 }
