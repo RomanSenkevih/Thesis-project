@@ -1,0 +1,252 @@
+.trend-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* **************************************************** */
+.trend-main-title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 40px 0;
+}
+
+.trend-main-title::after {
+  content: "";
+  background-color: rgb(181, 159, 91);
+  opacity: 0.9;
+  position: absolute;
+  top: 35px;
+  width: 66px;
+  height: 3px;
+}
+
+.trend-main-title-link {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(15, 13, 14);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* ************************************************** */
+.garden-on-the-windowsill {
+  background-image: url(../images/trend1.jpg);
+}
+
+.cheeses {
+  background-image: url(../images/trend2.jpg);
+}
+
+.girl-in-the-mountains {
+  background-image: url(../images/trend3.jpg);
+}
+
+.lemons {
+  background-image: url(../images/trend4.jpg);
+}
+
+.trend-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.3%;
+  margin-bottom: 0.3%;
+  width: 24.775%;
+  min-height: 318px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-color: #606260;
+  z-index: 1;
+}
+.trend-blocks article:nth-child(4n+1) {
+  margin-right: 0;
+}
+
+.trend-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.trend-text {
+  margin-top: auto;
+  width: 90%;
+  max-height: 85.8%;
+  margin-bottom: 4%;
+  padding: 9% 8.1% 8.1% 8.1%;
+  border: 3px solid rgb(181, 159, 91);
+  overflow: auto;
+  z-index: 2;
+}
+
+.trend-tag-ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.trend-tag-ul li {
+  margin-right: 20px;
+}
+
+.trend-tag-link {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(181, 159, 91);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+}
+
+.trend-tag-link:hover {
+  border-bottom: 2px solid #b59f5b;
+}
+
+.trend-title-link {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(252, 250, 251);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+}
+
+.trend-title-link:hover {
+  color: #b59f5b;
+}
+
+/* **************************************************************************************************** */
+@media (orientation: portrait) and (min-width: 641px) and (max-width: 1200px) {
+  .trend-main-title {
+      margin: 43px 0 30px;
+  }
+
+  .trend-main-title-link {
+      font-size: 18px;
+  }
+
+  .trend-tag-link {
+      font-size: 1.8vw;
+  }
+
+  .trend-title-link {
+      font-size: 2.2vw;
+  }
+
+  .trend-block {
+      min-height: 245px;
+      margin-right: 0.3%;
+      margin-bottom: 0.3%;
+      width: 49.85%;
+  }
+
+  .trend-blocks article:nth-child(2n+1) {
+      margin-right: 0;
+  }
+}
+/* ******************************************************************************************************************* */
+@media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px) {
+  .trend-main-title {
+      margin: 43px 0 30px;
+  }
+
+  .trend-main-title-link {
+      font-size: 18px;
+  }
+
+  .trend-tag-link {
+      font-size: 1.16vw;
+  }
+
+  .trend-title-link {
+      font-size: 1.4vw;
+  }
+
+  .trend-block {
+      min-height: 245px;
+      margin-right: 0.3%;
+      margin-bottom: 0.3%;
+      width: 24.775%;
+  }
+  .trend-blocks article:nth-child(4n+1) {
+      margin-right: 0;
+  }
+}
+/* ****************************************************************************************** */
+@media (orientation: landscape) and (max-width: 641px) {
+  .trend-main-title {
+      margin: 40px 0 35px 0;
+  }
+
+  .trend-main-title::after {
+      top: 30px;
+  }
+
+  .trend-main-title-link {
+      font-size: 16px;
+  }
+
+  .trend-tag-link {
+      font-size: 2.18vw;
+  }
+
+  .trend-title-link {
+      font-size: 2.5vw;
+  }
+
+  .trend-block {
+      min-height: 230px;
+      margin-right: 0.3%;
+      margin-bottom: 0.3%;
+      width: 49.85%;
+  }
+  .trend-blocks article:nth-child(2n+1) {
+      margin-right: 0;
+  }
+}
+/* ******************************************************************************************** */
+@media (orientation: portrait) and (max-width: 640px) {
+  .trend-blocks {
+      min-width: 300px;
+  }
+
+  .trend-main-title {
+      margin: 38px 0 35px 0;
+  }
+
+  .trend-main-title::after {
+      top: 30px;
+  }
+
+  .trend-main-title-link {
+      font-size: 16px;
+  }
+
+  .trend-tag-link {
+      font-size: 3.8vw;
+  }
+
+  .trend-title-link {
+      font-size: 4.4vw;
+  }
+
+  .trend-block {
+      min-height: 233px;
+      width: 100%;
+      margin-bottom: 4px;
+      margin-right: 0;
+  }
+}
