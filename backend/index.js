@@ -25,26 +25,45 @@ app.use(express.urlencoded());
 
 //POST: auth redister*  регистрация авторизации
 app.post("/auth/redister", registerValidation, async (req, res) => {
-  //Validation*  результат проверки: express-validator(в папке: ./validations/auth.js )
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json(errors.array());
+  try {
+    //Validation*  результат проверки: express-validator(в папке: ./validations/auth.js )
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json(errors.array());
+    }
+
+    //bcrypt password*  шифрование пароля с помощью: bcrypt
+    const password = req.body.password;
+    const salt = await bcrypt.genSalt(10);
+    const hash = await bcrypt.hash(password, salt);
+
+    //created a user model*  создал модель пользователя(модель в папке: ./models/user.js)
+    const doc = new UserModel({
+      email: req.body.email,
+      fullName: req.body.fullName,
+      avatarUrl: req.body.avatarUrl,
+      passwordHash: hash,
+    });
+
+    //save the user*  сохраняем пользователя
+    const user = await doc.save();
+
+    //generated a token*  сгенерированный токен
+    const token = jwt.sign({ _id: user._id }, "2702644a", { expiresIn: "30d" });
+
+    //separating PasswordHash from _doc* убрали пароль из ответа клиенту
+    const { passwordHash, ...userData } = user._doc;
+
+    //response to client*  ответ клиенту
+    res.json({
+      ...userData, //data from the user database* информация из базы данных про: user
+      token,
+    });
+  } catch (error) {
+    console.log(error);
+    //response to client*  ответ клиенту в случае ошибки
+    res.status(500).json({ message: "Не удалось зарегистрироваться" });
   }
-  //bcrypt password*  шифрование пароля с помощью: bcrypt
-  const password = req.body.password;
-  const salt = await bcrypt.genSalt(10);
-  const passwordHash = await bcrypt.hash(password, salt);
-  //created a user model*  создал модель пользователя(модель в папке: ./models/user.js)
-  const doc = new UserModel({
-    email: req.body.email,
-    fullName: req.body.fullName,
-    avatarUrl: req.body.avatarUrl,
-    passwordHash,
-  });
-  //save the user*  сохраняем пользователя
-  const user = await doc.save();
-  //response to client*  ответ клиенту
-  res.json(user);
 });
 
 // start server* запускает сервер
